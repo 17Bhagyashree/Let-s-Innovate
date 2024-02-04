@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diet Planner for Seniors</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Diet Planner for Seniors</h1>
+  </header>
+  <main>
+    <section id="preferences">
+      <h2>Enter Your Preferences</h2>
+      <form id="preferenceForm">
+        <label for="age">Age:</label>
+        <input type="number" id="age" required>
+        <label for="calories">Calories (suggested by doctor) (kcal):</label>
+        <input type="number" id="calories" required>
+        <label for="protein">Protein (suggested by doctor) (g):</label>
+        <input type="number" id="protein" required>
+        <label for="diseases">Diseases:</label>
+        <select id="diseases" multiple>
+          <option value="none">None</option>
+          <option value="diabetes">Diabetes</option>
+          <option value="hypertension">Hypertension</option>
+          <option value="heart disease">Heart Disease</option>
+          <option value="arthritis">Arthritis</option>
+          <option value="osteoporosis">Osteoporosis</option>
+          <option value="cancer">Cancer</option>
+          <!-- Add more options as needed -->
+        </select>
+        <label for="allergies">Allergies:</label>
+        <select id="allergies" multiple>
+          <option value="none">None</option>
+          <option value="nuts">Nuts</option>
+          <option value="dairy">Dairy</option>
+          <option value="gluten">Gluten</option>
+          <option value="seafood">Seafood</option>
+          <option value="eggs">Eggs</option>
+          <option value="soy">Soy</option>
+          <!-- Add more options as needed -->
+        </select>
+        
+        <button type="submit">Generate Meal Plan</button>
+      </form>
+    </section>
+    <section id="mealPlan">
+      <h2>Your Meal Plan</h2>
+      <div id="breakfast" class="meal"></div>
+      <div id="lunch" class="meal"></div>
+      <div id="dinner" class="meal"></div>
+    </section>
+  </main>
+  <!-- <footer>
+    <p>&copy; 2024 Diet Planner for Seniors <i>Made with &hearts; by Bhagyashree</i></p>
+  </footer> -->
+  <script src="script.js"></script>
+</body>
+</html>
